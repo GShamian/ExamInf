@@ -16,9 +16,10 @@ class RingBuffer:
             self.data.pop(k)
 
 a = RingBuffer([1,2,3,4])
+
 #print(a.data)
 #a.pop(2)
-print(a.data)
-for i in range(10):
-    print(a.next(1))
+#print(a.data)
+#for i in range(10):
+#    print(a.next(1))
 #print(a.data)
