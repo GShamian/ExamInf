@@ -8,17 +8,21 @@ class Paral_arr():
             self.books[i].append(arr[i])
 
     def print(self):
-        for j in range(self.len):
-            for i in range(self.len):
-                print(self.books[i][j], end = ' ')
-            print()
+        for i in self.books:
+            print(i)
+        print()
+
+    def print_pos(self, k):
+        for i in self.books[k]:
+            print(i, end = ' ')
 
 
-'''
+"""
 arr = Paral_arr(int(input("Please, write length(the number of Parallels)\n")))
 
 for i in range(arr.len):
     s = input().split()
     arr.push(s)
 arr.print()
-'''
+arr.print_pos(1)
+"""
